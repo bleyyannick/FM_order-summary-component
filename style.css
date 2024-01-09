@@ -56,12 +56,10 @@ body{
     border-radius: 12px;
 }
 
-#card-pricing div > a {
-    text-decoration: none;
-}
 #card-pricing div > a:hover {
     color: hsl(246, 73%, 65%);
     cursor:pointer; 
+    text-decoration: none;
 } 
 
 #card-pricing div:first-child {
