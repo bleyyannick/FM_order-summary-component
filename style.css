@@ -45,5 +45,63 @@ main#card {
 }
 
 #card-pricing {
-    background: hsl(225, 100%, 94%)
+    background: hsl(225, 100%, 98%);
+    display: flex;
+    align-items: center;
+    padding: 1.2em;
+    border-radius: 12px;
 }
+
+#card-pricing div:first-child {
+    margin-right: 1.2em;
+}
+
+#card-pricing div:nth-of-type(2) {
+    display: flex;
+    flex-direction: column;
+}
+#card-pricing div:last-of-type {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+#card-pricing div:nth-of-type(2) span:first-child {
+    font-weight: bold;
+}
+
+#card-pricing div:nth-of-type(2) span:last-of-type {
+    font-weight: 500;
+    color: hsl(224, 23%, 55%);
+} 
+
+#card-cta {
+    display:flex; 
+    flex-direction: column;
+    font-weight: bold;
+}
+.cta-payment {
+    padding: .8em 0;
+    background-color: hsl(245, 75%, 52%);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0px 12px 18px hsl(246, 70%, 86%);
+}
+.cta-payment:hover {
+    cursor: pointer;
+    filter:brightness(1.9); 
+    box-shadow: 0px 12px 18px hsl(246, 70%, 86%);
+}
+
+.cta-cancel {
+    margin-top: 1em; 
+    border: none; 
+    background-color:  inherit;
+    color: hsl(224, 23%, 55%);
+}
+
+.cta-cancel:hover {
+    color: black; 
+    cursor: pointer;
+}
+
