@@ -13,16 +13,20 @@ body{
     background-repeat: no-repeat;
     min-height: 100vh;
     display: flex; 
-    justify-content: center; 
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
 }
 
-main#card {
+#card {
     background-color: white ;
-    width: 450px; 
-    height: 697px; 
+    max-width: 450px; 
+    min-width: 327px;
+    max-height: 697px; 
+    min-height: 567px;
     border-radius: 1.3rem;
     overflow: hidden;
+    box-shadow: 9px 19px 43px -9px rgba(0,0,0,0.1);
 }
 
 #card-img ~ div {
@@ -51,6 +55,14 @@ main#card {
     padding: 1.2em;
     border-radius: 12px;
 }
+
+#card-pricing div > a {
+    text-decoration: none;
+}
+#card-pricing div > a:hover {
+    color: hsl(246, 73%, 65%);
+    cursor:pointer; 
+} 
 
 #card-pricing div:first-child {
     margin-right: 1.2em;
@@ -90,7 +102,7 @@ main#card {
 .cta-payment:hover {
     cursor: pointer;
     filter:brightness(1.9); 
-    box-shadow: 0px 12px 18px hsl(246, 70%, 86%);
+    box-shadow:  0px 12px 18px hsl(246, 73%, 65%);
 }
 
 .cta-cancel {
