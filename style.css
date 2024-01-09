@@ -89,7 +89,6 @@ body{
 #card-cta {
     display:flex; 
     flex-direction: column;
-    font-weight: bold;
 }
 .cta-payment {
     padding: .8em 0;
@@ -97,6 +96,7 @@ body{
     color: white;
     border: none;
     border-radius: 10px;
+    font-weight: bold;
     box-shadow: 0px 12px 18px hsl(246, 70%, 86%);
 }
 .cta-payment:hover {
@@ -107,7 +107,10 @@ body{
 
 .cta-cancel {
     margin-top: 1em; 
+    text-align: center;
+    text-decoration: none;
     border: none; 
+    font-weight: bold;
     background-color:  inherit;
     color: hsl(224, 23%, 55%);
 }
