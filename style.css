@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*{
+    margin: 0; 
+    padding: 0; 
+    font-family: "Red Hat Display", sans-serif;
+    font-size: 16px; ; 
+}
+
+body{
+    background-color: hsl(225, 100%, 94%);
+    background-image: url("./images/pattern-background-desktop.svg"); 
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+main#card {
+    background-color: white ;
+    width: 450px; 
+    height: 697px; 
+    border-radius: 1.3rem;
+    overflow: hidden;
+}
+
+#card-img ~ div {
+    margin: 2rem; 
+}
+
+#card-summary {
+    text-align: center; 
+}
+#card-summary h1 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 900;
+}
+#card-summary p {
+    padding: .8em;
+    line-height: 1.5;
+    font-weight: 100;
+    color:  hsl(224, 23%, 55%) 
+}
+
+#card-pricing {
+    background: hsl(225, 100%, 94%)
+}
